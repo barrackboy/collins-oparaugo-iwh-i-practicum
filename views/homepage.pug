@@ -1,0 +1,23 @@
+doctype html
+meta(charset="utf-8")
+html(lang="en")
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Object Table
+        a(href='/update-cobj') Add/Update this table
+        table
+            thead 
+                th Name 
+                th City
+                th Country 
+             
+         
+            each beach in data
+                tr 
+                    td #{beach.properties.name}
+                    td #{beach.properties.city}
+                    td #{beach.properties.country}
+        

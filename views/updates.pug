@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href='/') Return to the homepage
+        .form-wrapper
+            strong BEACH INFO
+            form(method="POST")
+                label(for="name") Beach name:
+                input(type="text" name="name" required)
+                label(for="city") City:
+                input(type="text" name="city")
+                label(for="country") Country:
+                input(type="text" name="country")
+                input(type="submit" value="Submit")
